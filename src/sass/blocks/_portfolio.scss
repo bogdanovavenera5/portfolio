@@ -1,0 +1,115 @@
+.portfolio {    
+    background: url(../img/1.jpg)  no-repeat 50%/cover;    
+    min-height: 905px;
+    position: relative; 
+    z-index: 1;
+    &__title { 
+        padding-top: 70px; 
+        text-align: center;
+        z-index: 1; 
+        @include before_circle;
+        color: #333333;                  
+        &:before { 
+            position: absolute;  
+            top: 62px;
+            left: 50%;
+            transform:translateX(-50%);        
+        }
+    }
+    &__subtitle {
+        text-align: center;
+            
+    }
+    &__line {
+        margin: 0 auto;        
+    }
+    &__grid-container {
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: repeat(2, minmax(auto, 360px));
+        grid-template-rows: repeat(2,minmax(auto, 309px));
+        grid-auto-rows: minmax(auto, 409px); 
+        gap: 30px;     
+        justify-content: space-evenly;
+        transition: .6s;
+    }
+    &__block {
+        position: relative;
+        background-color: #ffffff;
+                        
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;         
+            background: rgba($color: #000000, $alpha: 0.2);                                
+        }
+        &:hover .link {       
+            opacity: 1;
+            top: calc(50% - 10%);
+            transition: .6s;
+            visibility: visible;
+            left: 50%;
+            transform: translateX(-50%);    
+                     
+        }
+        &:hover {
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background: rgba($color: #000000, $alpha: 0.7);                
+                transition: 0.6s;
+                border: none; 
+            }
+        }
+                                  
+    }
+    &__img {
+        width: 100%;
+        height: 100%;         
+        object-fit: fill;
+        
+    }
+    &__link {        
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 50%;       
+        transform: translateY(-50%); 
+        transform: translateX(-50%);
+        width: 170px;
+        height: 45px;
+        border-radius: 15px;
+        border: 2px solid #ffff;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .6s;
+        padding: 7px 15px;
+  
+        
+        &:hover {
+            text-decoration: none;
+            color: $main_color;
+            box-shadow: 3px 3px 10px $main-color;
+        }
+        &:active {
+            outline: none;
+        }
+    }
+}
+        
+   
+       
+     
+    
