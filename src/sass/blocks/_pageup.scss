@@ -5,9 +5,10 @@
     right: 40px;
     width: 40px;
     height: 40px;
+    z-index: 100;   
     img {
         width: 100%;
         border: 1px solid #fff;
-        border-radius: 50%;
+        border-radius: 50%;       
     }
 }

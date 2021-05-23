@@ -60,11 +60,11 @@
             </div>
             <nav class="header__menu">
                 <ul class=" header__list">
-                    <li class="header__item"><a href="#" class="menu__link1">ГЛАВНАЯ</a></li>
-                    <li class="header__item"><a href="#" class="menu__link1">ОБО МНЕ</a></li>
-                    <li class="header__item"><a href="#" class="menu__link1">ИНСТУМЕНТЫ</a></li>
-                    <li class="header__item"><a href="#" class="menu__link1">ПОРТФОЛИО</a></li>
-                    <li class="header__item"><a href="#" class="menu__link1">КОНТАКТЫ</a></li>
+                    <li class="header__item"><a href="#promo" class="menu__link1">ГЛАВНАЯ</a></li>
+                    <li class="header__item"><a href="#about-me" class="menu__link1">ОБО МНЕ</a></li>
+                    <li class="header__item"><a href="#tools" class="menu__link1">ИНСТУМЕНТЫ</a></li>
+                    <li class="header__item"><a href="#portfolio" class="menu__link1">ПОРТФОЛИО</a></li>
+                    <li class="header__item"><a href="#footer" class="menu__link1">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
             <div class="menu__social">
@@ -114,8 +114,8 @@
     <section id="promo" class="promo">
         <div class="container">           
             <div class="title title_fz16 promo__subtitle">Меня зовут   Надежда Богданова</div>
-            <div class="title title_fz48 promo__title">Я web-разработчица  из города Уральскa</div>
-            <div class="promo__btns">
+            <div class="title title_fz48 promo__title">Я web-разработчица  из города Уральска</div>
+            <div class="promo__btns" data-modal="consultation">
                 <a href="#" class="promo__link button">
                     <span class="button__line button__line--top"></span>
                     <span class="button__line button__line--right"></span>
@@ -217,7 +217,6 @@
        </div>
     </section>
     <section id="tools" class="tools">
-        <div class="tools__black"></div>
         <div class="container">
             <h2 class="tools__title title title_fz36">Что я использую в работе</h2>
             <div class="line tools__line"></div>
@@ -440,9 +439,9 @@
                         </a>
                     </div> 
                     <div class="footer__descr">Или оставьте ваши данные и я сама вам напишу:</div>              
-                    <form action="#" class="footer__form">
+                    <form action="smart.php" metod="POST" class="footer__form" enctype="multipart/form-data">
                         <div class="footer__input">
-                            <input  name="name" id="name" type="text">
+                            <input required  name="name" id="name" type="text">
                                 <label  for="name">Ваше имя</label>
                         </div>
                         <div class="footer__input">
@@ -470,6 +469,52 @@
                 </div>  
             </div>
      </footer>
+     <div class="overlay" id="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">
+                Заполните форму, пожалуйста,
+            </div>
+            <div class="modal__descr">
+                и я свяжусь с вами в течении часа
+            </div>
+            <form class="modal__form" action="smart.php" method="POST" enctype="multipart/form-data">
+                <div class="modal__input">
+                    <input required name="name" type="text" id="name">
+                    <label for="name">Ваше имя</label>
+                </div>
+                <div class="modal__input">
+                    <input required name="email" type="email" id="email">
+                    <label for="email">Ваша почта</label>
+                </div>
+                <div class="modal__input file">
+                    <input name="upload" type="file" id="file">
+                    <label class="dawnload" for="file"><img src="icons/download.svg" alt="download"><span class="value">Загрузите файл</span></label>
+                </div>
+                <div class="modal__text">
+                    <textarea required name="text" id="text"></textarea>
+                    <label for="text">Ваше сообщение</label>
+                </div>
+                <div class="modal__input">
+                    <button class="btn__modal btn btn_mini">Отправить</button>
+                </div>
+                <div class="modal__privacy">
+                    <input required type="checkbox">Я согласен(а) с &nbsp;<a href="policy.html">Политикой конфиденциальности</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">
+                Спасибо!<br>Ваше письмо отправлено!
+            </div>
+        </div>
+    </div>
+    <a href="#promo" class="pageup">
+        <img src="icons/pageup.svg" alt="up">
+    </a>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>      
 </body>
