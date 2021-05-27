@@ -5,19 +5,17 @@
     background-attachment: fixed;
     position: relative;
     z-index: 1;    
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-    }  
-    &__wrapper1 {
-        display: flex;
-        justify-content: space-evenly;              
-    }
-    &__wrapper2 {
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 50px;              
-    } 
+    &__wrapper { 
+        width: 940px;  
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 250px));
+        grid-template-rows: repeat(2, minmax(auto, 350px));
+        grid-auto-rows: minmax(auto, 350px);
+        column-gap: 95px;
+        row-gap: 35px;
+        margin-top: 40px;
+        margin: 0 auto;                  
+    }     
     &__subtitle {
         position: relative;
         font-weight: 700;

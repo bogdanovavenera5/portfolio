@@ -2,7 +2,7 @@
   position: fixed;
   min-height: 50px;
   width: 100vw;
-  background-color: $main-color;  
+  background-color:rgba(16, 15, 13, 1); ;  
   z-index: 100;
   .header__wrapper {
     display: flex;
@@ -40,7 +40,7 @@
       margin-right: none;    
     }
     &:hover {
-      color:  #333333;
+      color: $main-color;
       filter: none;
       text-decoration: none;
     }    

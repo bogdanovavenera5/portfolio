@@ -1,7 +1,7 @@
 .footer {
     background-color:rgba(16, 15, 13, 1);
     min-height: 730px;
-    padding: 80px 0 80px 0;
+    padding: 80px 0 80px 0;   
     &__subtitle {
         color: #fff;       
     }
@@ -18,8 +18,7 @@
         margin-top: 20px;
     }
     &__item {
-        img {
-        
+        img {        
             margin-top: 130px;     
             height: 508px;
         }        
@@ -28,7 +27,7 @@
         padding: 0 35px 0 52px;        
         display: grid;
         margin-top: 30px;
-        grid-template-columns:  450px 600px;
+        grid-template-columns:  450px 600px;       
         justify-content: space-between;
         row-gap: 20px;
               
@@ -37,9 +36,7 @@
         display: grid;
         grid-column: 1/3;
         grid-template-columns: repeat(2,auto);
-        column-gap: 20px;
-        margin-top: 20px;
-      
+        column-gap: 20px;            
     }  
     
     &__descr {
@@ -63,10 +60,8 @@
         line-height: 21px;      
         span {
             color: $main-color;
-
         }       
-    }
-    
+    }    
     &__input { 
         position: relative;      
         color: #fff;
@@ -93,8 +88,7 @@
         width: 100%;
     }
     &__textarea { 
-        position: relative; 
-        margin-top: 20px;      
+        position: relative;              
         color: #fff;
         grid-column: 1/3;
         textarea {
@@ -128,25 +122,32 @@
             margin-right: 30px;
             width: 30px; 
         }         
-    }
+    }   
     &__form {
         margin-top: 20px;
         display: grid;
         grid-template: 45px 190px  40px/ repeat(2, 280px);
         justify-content: space-between;
-        row-gap: 10px;
+        row-gap: 30px;
     }
     &__link-github {
-    img {
-        transform: rotate(90deg);
-  
-    }       
+        img {
+        transform: rotate(90deg);  
+        }       
     }
     &__block1 {
         display: grid;
         grid-column: 1/3;
-        grid-template-columns: 300px 300px;
-        margin-top: 40px; 
+        grid-template-columns: 280px 280px;
+        margin-top: 30px; 
         column-gap: 20px;       
+    }
+    &__link {  
+        
+        &:hover {           
+            color: rgb(13, 16, 16);    
+                               
+        } 
+        
     }
 }

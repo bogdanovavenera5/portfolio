@@ -11,9 +11,7 @@
     transition: 0.2s;
     border: 2px solid #fff;
     border-radius: 10px;
-    font-family: 'Caveat-Regular';
-
-    
+    font-family: 'Caveat-Regular';    
 }
 .button__line {
    position: absolute;
@@ -31,8 +29,6 @@
     transition: 1s;
     transition-delay: 0.25s;   
 }
-
-
 .button__line--bottom {
     bottom: 0;
     right: -100%;
@@ -73,7 +69,5 @@
 .button:hover {
     box-shadow: 0 0 5px $main-color, 0 5px  8px $main-color ; 
     color: $main-color;
-    transition-delay: 0.25s;
- 
-   
+    transition-delay: 0.25s;  
 }

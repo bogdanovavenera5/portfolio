@@ -4,6 +4,7 @@
     height: 270px;
     width: 190px;
     position: relative;
+    
     z-index: 2;  
     &:hover {
       .card {
@@ -49,7 +50,7 @@
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     font-size: 170px;
-  }  
+  }
   .card {
     background: #f0ead6;
     position: relative;
@@ -132,25 +133,25 @@
     font-weight: 300;
   }
   .img__skills1 {
-   width: 50%;
+     width: 50%;
   }
  .img__skills2 {
-  width: 50%;
+    width: 50%;
   }
   .img__skills3 {
-  width: 50%;
+    width: 50%;
   } 
   .img__skills4 {
-  width: 80%;
-  margin-bottom: 20px;
+    width: 80%;
+    margin-bottom: 20px;
   }
   .img__skills5 {
-  width: 60%;
-  margin-bottom: 30px;
+    width: 60%;
+    margin-bottom: 30px;
   }
   .img__skills6 {
-  width: 70%;
-  margin-bottom: 30px;
+    width: 70%;
+    margin-bottom: 30px;
   }
  .line1 {
     h5 {
