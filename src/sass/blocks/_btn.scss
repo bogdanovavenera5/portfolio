@@ -1,7 +1,7 @@
 .btn {
     width: 230px;
     height: 40px;
-    background: #E74653;
+    background: $main-color;
     border-radius: 11px;
     font-weight: bold;
     font-size: 14px;
@@ -10,6 +10,9 @@
     border: none;
     &:active,&:focus {
         outline: none; 
+    }
+    &:hover {
+        color: #333333; 
     } 
     &__modal {
         display: flex;
