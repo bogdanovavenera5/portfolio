@@ -670,7 +670,7 @@
 		min-height: 100vh;
 		.promo__subtitle {
 			padding: 0;
-			width: 300px;
+			width: 250px;
 			display: block;
 			margin: 0 auto;			
 			&:before {
@@ -683,18 +683,21 @@
 			margin: 0 auto;
 			padding-top: 20px;
 			width: 100%;
+			text-align: center;
 		}
-		&__btns {
-			margin-left: 50px;
+		&__btns {			
 			width: 260px;
 			height: 30px;
 			font-size: 14px;
-			font-weight: 500;			
+			font-weight: 500;
+			margin: 0 auto;
+			padding-top: 30px;
+					
 		}
-		&__link {
+		&__link  {
 			padding: 10px 12px 10px 12px;
 			font-size: 10px;
-		}
+		}			
 	}
 	.about-me {
 		padding: 20px 0 30px 0;
@@ -1112,11 +1115,14 @@
 			margin-top: 0;
 		}
 		&__subtitle {
-			&:before {
-				left: 40px;
+			width: 250px;
+			margin: 0 auto;
+					
+			&:before {								
+				left: 20px;
 			}
 			&:after {
-				right: 40px;
+				right: 20px;
 			}			
 		}
 		.panel {
